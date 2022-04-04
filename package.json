@@ -7,7 +7,7 @@
     "docker:build": "docker image build . -t thinkful-ed/zid-be-project-movie-01-qualified",
     "docker:run": "docker run --rm -it -p 5000:5000 thinkful-ed/zid-be-project-movie-01-qualified",
     "docker:stop": "docker stop $(docker ps -q)",
-    "docker:test": "docker run -t thinkful-ed/zid-be-project-movie-01-qualified npm test",
+    "docker:test": "docker run -t  thinkful-ed/zid-be-project-movie-01-qualified npm test",
     "knex": "knex",
     "migrate": "knex migrate:latest",
     "reset": "npm run rollback && npm run migrate && npm run seed",
@@ -36,4 +36,4 @@
     "nodemon": "^2.0.6",
     "supertest": "^6.1.3"
   }
- }
+}
